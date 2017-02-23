@@ -1,0 +1,9 @@
+1)Clusters: a cluster is a collection of nodes.
+Hadoop cluster:A Hadoop cluster is a special type of cluster designed specifically for storing and analyzing huge amounts of unstructured data in a distributed computing environment.
+==========================================================================================================================================================================================================================================================
+2)component of Hadoop 1.x are the following:
+            *NAmeNode - It contains the hadoop filesystem tree and metadata information about files and directories.It is a software that can be run on commodity hardware The system having the namenode acts as the master server. 
+            *Secondary Namenode - performs house-keeping activities for namenode periodic merging of namespace and edits this is not a backup for Namenode.
+            *DataNode - stores actual data blocks of file in HDFS on its local disk sends signals to NAmeNode periodically called heartbeat to verify if its active they are the workhorse of the system.
+            *jobTracker - Job Tracker is used to assign MapReduce Tasks to Task Trackers in the Cluster of Nodes. Job Tracker maintains all the Task Trackers status like Up/running, Failed, Recovered etc.
+            *TaskTracker - Task Tracker executes the Tasks which are assigned by Job Tracker sends the status of those tasks to Job Tracker.it runs individual map-reduce jobs on datanodes
